@@ -21,8 +21,6 @@ RUN apk add --no-cache \
   && docker-php-ext-install zip \
   && docker-php-ext-install opcache \
 
-  && apk del libjpeg-turbo-dev libpng-dev freetype-dev libmcrypt-dev bzip2-dev \
-
   && echo "== Done =="
 
 CMD ["php-fpm"]
